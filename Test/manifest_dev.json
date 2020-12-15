@@ -1,0 +1,16 @@
+{
+	"name" : "EV_SQS_Test",
+	"version" : "1.0",
+	"type" : "ipaas",
+	"volumesFrom" : [
+		"bwplugin/bw.sqs"
+	],
+	"endpoints" : [
+		{
+			"type" : "private",
+			"pingable" : true,
+			"protocol" : "http",
+			"port" : "7777"
+		}
+	]
+}
