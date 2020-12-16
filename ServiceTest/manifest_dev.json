@@ -1,0 +1,68 @@
+{
+	"name" : "ServiceTest.application",
+	"version" : "1.0",
+	"type" : "ipaas",
+	"propertyPrefix" : "iPaaS_USER_OverRIDE_",
+	"properties" : [
+		{
+			"name" : "mytest",
+			"datatype" : "string",
+			"default" : "HELLO"
+		},
+
+		{
+			"name" : "/MyGroup/MyVar",
+			"datatype" : "string",
+			"default" : "Testing CICD"
+		}
+	],
+	"endpoints" : [
+		{
+			"name" : "Resource",
+			"protocol" : "http",
+			"port" : "8080",
+			"spec" : {
+				"name" : "ServiceTest.application",
+				"version" : "v1"
+			},
+			"swagger" : {
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Resource",
+    "description" : "Resource service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/resource" : {
+      "get" : {
+        "summary" : "getResource",
+        "description" : "getResource",
+        "operationId" : "get-resource",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}
+		},
+		{
+			"type" : "private",
+			"pingable" : true,
+			"protocol" : "http",
+			"port" : "7777"
+		}
+	]
+}
