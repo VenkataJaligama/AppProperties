@@ -11,6 +11,12 @@
 		},
 
 		{
+			"name" : "newProperty",
+			"datatype" : "string",
+			"default" : "QAZ"
+		},
+
+		{
 			"name" : "/MyGroup/MyVar",
 			"datatype" : "string",
 			"default" : "Testing CICD"
