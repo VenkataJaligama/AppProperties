@@ -1,0 +1,192 @@
+{
+	"name" : "ReportsIntegration.application",
+	"version" : "1.0",
+	"type" : "ipaas",
+	"propertyPrefix" : "iPaaS_USER_OverRIDE_",
+	"properties" : [
+		{
+			"name" : "OM_Host",
+			"datatype" : "string",
+			"default" : "bosswebapi.cmh.reportsstage.evinternal.net"
+		},
+
+		{
+			"name" : "OM_Port",
+			"datatype" : "integer",
+			"default" : "443"
+		},
+
+		{
+			"name" : "OM_Username",
+			"datatype" : "string",
+			"default" : "6728B9CB-3583-4AC5-817F-5517B52A7C4A"
+		},
+
+		{
+			"name" : "OM_Password",
+			"datatype" : "password",
+			"default" : "#!jcIXBSpg6nkXI+ooAiLJf5vM5om+fYxjw5aF7++5c9dx+i2PN8QpgXdRwvTq3UFLly+oF8JOGVJ6jIAQ/zeiCZt2VlQsd6szwqjpz+XOgZPAhgTtVwht3Q=="
+		},
+
+		{
+			"name" : "SF_Username",
+			"datatype" : "string",
+			"default" : "pol-payments@pictometry.com.staging"
+		},
+
+		{
+			"name" : "SF_Password",
+			"datatype" : "password",
+			"default" : "#!6pBt26Jsc0bZCSwSHpayFerf06xT9qr//fkfhdjoNqMOeb9soBKvbYllK5oMD7syNArDOtTqGxPuf+uWPMMJ/fJXIcuasgqlOS7V52nBj64="
+		},
+
+		{
+			"name" : "Cloud_Host",
+			"datatype" : "string",
+			"default" : "integration.cloud.tibcoapps.com"
+		},
+
+		{
+			"name" : "Cloud_Port",
+			"datatype" : "integer",
+			"default" : "443"
+		},
+
+		{
+			"name" : "PriceBookName",
+			"datatype" : "string",
+			"default" : "Reports"
+		},
+
+		{
+			"name" : "SFUserID",
+			"datatype" : "string",
+			"default" : "005A0000000uAp6IAE"
+		},
+
+		{
+			"name" : "OrgnodePublisher",
+			"datatype" : "string",
+			"default" : "/4nppizrekc6fsfy53hll6dyypldoqluw/OMParentAccountPublisher/omparentaccountpublisher"
+		},
+
+		{
+			"name" : "BillpayerPublisher",
+			"datatype" : "string",
+			"default" : "/4nppizrekc6fsfy53hll6dyypldoqluw/OMBillpayerParentPublisher/ombillpayerparentpublisher"
+		},
+
+		{
+			"name" : "ReportsQuantity",
+			"datatype" : "string",
+			"default" : "50"
+		},
+
+		{
+			"name" : "AddToSFQueuePath",
+			"datatype" : "string",
+			"default" : "/kkuuosvnbcej5klq4ysc5z45p5227nxm/AddQueueRecord/addqueuerecord"
+		},
+
+		{
+			"name" : "ReportsTimer",
+			"datatype" : "integer",
+			"default" : "60"
+		},
+
+		{
+			"name" : "CasesTimer",
+			"datatype" : "integer",
+			"default" : "60"
+		},
+
+		{
+			"name" : "CampaignID",
+			"datatype" : "string",
+			"default" : "70155000000M5ahAAC"
+		},
+
+		{
+			"name" : "SalesforceUrl",
+			"datatype" : "string",
+			"default" : "https://test.salesforce.com/"
+		},
+
+		{
+			"name" : "SFServerUrl",
+			"datatype" : "string",
+			"default" : "https://test.salesforce.com/services/Soap/u/35.0"
+		},
+
+		{
+			"name" : "SFOpportunityCurrency",
+			"datatype" : "string",
+			"default" : "USD"
+		},
+
+		{
+			"name" : "MailPath",
+			"datatype" : "string",
+			"default" : "/yq54xsdaqskv3pw3iuycwbsha6ilrhfg/Outlook/Mail"
+		},
+
+		{
+			"name" : "SFClientHost",
+			"datatype" : "string",
+			"default" : "cs37.salesforce.com"
+		},
+
+		{
+			"name" : "SFClientPort",
+			"datatype" : "integer",
+			"default" : "443"
+		},
+
+		{
+			"name" : "ProfilePublisher",
+			"datatype" : "string",
+			"default" : "/4nppizrekc6fsfy53hll6dyypldoqluw/OMProfilePublisher/omprofilepublisher"
+		},
+
+		{
+			"name" : "CreateReportSubscriberURI",
+			"datatype" : "string",
+			"default" : "/6kdt2yspjpcxcty7veja6ycgh5t5nonb/CreateReport/createreport"
+		},
+
+		{
+			"name" : "AdjustReportSubscriberURI",
+			"datatype" : "string",
+			"default" : "/6kdt2yspjpcxcty7veja6ycgh5t5nonb/AdjustReportProducts/adjustreportproducts"
+		},
+
+		{
+			"name" : "ReplaceReportSubscriberURI",
+			"datatype" : "string",
+			"default" : "/6kdt2yspjpcxcty7veja6ycgh5t5nonb/ReplaceReportProducts/replacereportproducts"
+		},
+
+		{
+			"name" : "UpdateReportSubscriberURI",
+			"datatype" : "string",
+			"default" : "/6kdt2yspjpcxcty7veja6ycgh5t5nonb/UpdateReportHeader/updatereportheader"
+		},
+
+		{
+			"name" : "TCI_BW_CONFIG_OVERRIDES",
+			"datatype" : "string",
+			"default" : "bw.xml.typedmodel.oldgetvalue=true com.tibco.bw.plugin.salesforce.nil.element=true"
+		}
+	],
+	"volumesFrom" : [
+		"bwplugin/bw.salesforce"
+	],
+	"endpoints" : [
+		{
+			"type" : "private",
+			"pingable" : true,
+			"protocol" : "http",
+			"port" : "7777"
+		}
+	]
+}
